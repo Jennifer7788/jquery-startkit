@@ -5,22 +5,17 @@
      * 初始化头部滚动事件
      */
     eventHandlers() {
-      $('#indexContainer').scroll(e => {
-        this.headerBehavior(e.target.scrollTop)
-      })
+      $(document.body).scroll(e => {
+        this.headerBehavior(e.target.scrollTop, e.target.scrollLeft);
+      });
+
     },
     // 头部动画
-    headerBehavior(scrollTop) {
-      /*if (scrollTop >10) {
-        $('#pageHeader').removeClass('static')
-        $('#pageHeader').addClass('fixed')
-      } else {
-        $('#pageHeader').removeClass('fixed')
-        $('#pageHeader').addClass('static')
-      }*/
+    headerBehavior(scrollTop, scrollLeft) {
+      // header横向滚动同步
+      $('#pageHeader').css('transform', `translateX(-${scrollLeft}px)`);
     },
   }
 
-  console.log('in')
   Header.eventHandlers()
 })(jQuery)
