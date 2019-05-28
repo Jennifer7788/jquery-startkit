@@ -163,21 +163,29 @@
   }
 
   .contain {
-    width: 1080px;
     display: flex;
+    justify-content: space-between;
+    width: 1080px;
     margin: 0 auto;
   }
 
   .con-3 {
-    justify-content: space-between;
     width: 340px;
-    margin: 0 15px;
     position: relative;
 
     .img-con{
       position: relative;
       width: 340px;
       height: 450px;
+      transition: all .6s ease-out;
+      transform: translateY(-40px);
+      opacity: 0;
+
+      &.active {
+        transform: translateY(0);
+        opacity: 1;
+      }
+
       img{
         width: 100%;
       }
@@ -363,6 +371,83 @@
         font-weight: lighter;
       }
 
+    }
+  }
+  #brandPremiun {
+    .row-content {
+      height: 100%;
+      transform: translateX(-40%);
+      transition: all .3s ease-out;
+      opacity: 0;
+
+      &.active {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+  }
+  #withAbundantCapital {
+    .row-content {
+      height: 100%;
+      transform: translateX(40%);
+      transition: all .3s ease-out;
+      opacity: 0;
+
+      &.active {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+  }
+  #professionalManagement {
+    .bg-img1 {
+      transition: all .3s ease-out;
+      transform: translateX(-40%);
+      opacity: 0;
+
+      &.active {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    .text-area {
+      transition: all .3s ease-out;
+      transform: scaleX(0);
+      transform-origin: 0;
+
+      &.active {
+        transform: scaleX(1);
+      }
+    }
+    
+    .title {
+      transition: all .3s ease-out;
+      opacity: 0;
+
+      &.active {
+        opacity: 1;
+      }
+    }
+
+    .horizontal-line {
+      transition: all .3s ease-out;
+      transform: scaleX(0);
+      transform-origin: 0;
+
+      &.active {
+        transform: scaleX(1);
+      }
+    }
+
+    .EN-text-area {
+      transition: all .3s ease-out;
+      transform: scaleX(0);
+      transform-origin: 0;
+
+      &.active {
+        transform: scaleX(1);
+      }
     }
   }
   .con-1-left{

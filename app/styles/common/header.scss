@@ -10,6 +10,11 @@ header.page-header {
   min-width: 1080px;
   background-color: #ffffff;
 
+  &.mini {
+    height: 70px;
+    line-height: 70px;
+  }
+
   .logo-area {
     position: relative;
     display: inline-block;
@@ -68,30 +73,6 @@ header.page-header {
     }
     label{
       color: #ffffff;
-    }
-  }
-  &.static {
-
-  }
-
-  &.fixed {
-    height: 33px;
-    background-color: #ffffff;
-
-    .logo-area {
-      height: 33px;
-      box-shadow: 0 1px 0 0 #e8e8e8;
-    }
-
-    .logo-static,
-    .search-static,
-    .menu-static {
-      display: none;
-    }
-    .logo-fixed,
-    .search-fixed,
-    .menu-fixed {
-      display: block;
     }
   }
 }
