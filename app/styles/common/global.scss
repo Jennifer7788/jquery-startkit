@@ -1,15 +1,125 @@
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img ,input{
+  margin: 0;
+  padding: 0;
+}
+*{
+  box-sizing: border-box;
+}
+body, html {
+  width: 100%;
+}
+fieldset, img, input, button { 			/*fieldset组合表单中的相关元素*/
+  border: none;
+  padding: 0;
+  margin: 0;
+  outline-style: none;
+}
+
+ul, ol {
+  list-style: none;				/*清除列表风格*/
+}
+
+
+select, input {
+  vertical-align: middle;
+}
+
+select, input, textarea {
+  font-size: 12px;
+  margin: 0;
+}
+
+textarea {
+  resize: none;
+}
+
+/*防止多行文本框拖动*/
+img {
+  border: 0;
+  vertical-align: middle;
+}
+
+/*  去掉图片低测默认的3像素空白缝隙*/
+table {
+  border-collapse: collapse;			/*合并外边线*/
+}
+
+
 body {
-  background: #fafafa;
-  font-family: -apple-system-font, "Segoe UI", "Lucida Grande", Helvetica, Arial, "Microsoft YaHei", FreeSans, Arimo,
-    "Droid Sans", "wenquanyi micro hei", "Hiragino Sans GB", "Hiragino Sans GB W3", FontAwesome, sans-serif;
-  color: #333;
+  font-size: 16px;
+  background: #fff;
+  font-family: PingFangSC;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  height:0;
+  line-height:0;
+  visibility:hidden;
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1; /*IE/7/6*/
 }
 
 a {
+  color: #666;
   text-decoration: none;
-  color: #0e90d2;
 }
 
-image {
-  width: auto;
+
+
+h1, h2, h3, h4, h5, h6 {
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 100%;
+}
+
+s, i, em {
+  font-style: normal;
+  text-decoration: none;
+}
+
+.col-red {
+  color: #C81623 !important;
+}
+
+/*公共类*/
+.nav-w {
+  /*版心 提取 */
+  width: 1060px;
+  margin: 0 auto;
+}
+.w {
+  /*版心 提取 */
+  width: 1080px;
+  margin: 0 auto;
+}
+
+.fl {
+  float: left
+}
+
+.fr {
+  float: right
+}
+
+.al {
+  text-align: left
+}
+
+.ac {
+  text-align: center
+}
+
+.ar {
+  text-align: right
+}
+
+.hide {
+  display: none
+}
+img{
+/*  background-color: #ddd;*/
 }

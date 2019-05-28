@@ -5,231 +5,210 @@
   @@include('./templates/meta.html')
   <title>Volanews – Latest news about China's innovation</title>
   <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <![endif]-->
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <![endif]-->
 
   <!-- build:css styles/vendor.css -->
   <link rel="stylesheet" href="/node_modules/normalize.css/normalize.css">
   <!-- endbuild -->
   <!-- build:css styles/main.css -->
-  <link rel="stylesheet" href="../styles/main.css">
+  <link rel="stylesheet" href="styles/main.css">
   <!-- endbuild -->
 </head>
 
 <body>
-  <div class="index-container">
-    @@include('./templates/header.html')
-
-    <!-- 滚动内容 -->
-    <main id="indexContainer" class="index-content-wrap">
-      <div class="index-content">
-        <!-- 头部的大图列表 -->
-        <section class="big-list">
-          <a href="./article.html" class="list-item"
-            style="background-image: url('https://www.volanews.com/upload/portal/20190517/212c166c17db9825b062a45717e45dc0.jpeg')">
-            <div class="item-mask"></div>
-            <div class="item-content">
-              <div class="tags">
-                <span class="tag">#CHINA</span>
-                <span class="tag">#GIANTS</span>
-                <span class="tag">#HUAWEI</span>
-              </div>
-              <div class="title">Huawei enabled all backup chips upon US sanction</div>
-              <div class="date">May 17, 2019</div>
-            </div>
-          </a>
-
-          <a href="./article.html" class="list-item"
-            style="background-image: url('https://www.volanews.com/upload/topic/20190403/3e4a0f838bee9e3211fc5bd52ebbf513.jpg')">
-            <div class="item-mask"></div>
-            <div class="item-content">
-              <div class="tags">
-                <span class="tag">#Topic</span>
-              </div>
-              <div class="title">Southeast Asia &amp; India Startup Financing</div>
-              <div class="date">Apr 02, 2019</div>
-            </div>
-          </a>
-
-          <a href="./article.html" class="list-item"
-            style="background-image: url('https://www.volanews.com/upload/topic/20190403/2cd69a8a6196f01f336dbe8586c4f22b.jpg')">
-            <div class="item-mask"></div>
-            <div class="item-content">
-              <div class="tags">
-                <span class="tag">#topic</span>
-              </div>
-              <div class="title">China’s Capital</div>
-              <div class="date">Apr 02, 2019</div>
-            </div>
-          </a>
-        </section>
-
-        <!-- 下面的小图列表 -->
-        <section class="small-list">
-          <div class="list-title" style="margin-top: 33px">
-            <span>LATEST NEWS</span>
-          </div>
-
-          <div id="smallList" class="list-items">
-            <!-- 小列表项 -->
-            <a href="./article.html" class="list-item">
-              <div class="item-left">
-                <div class="item-img"
-                  style="background-image: url(https://www.volanews.com/upload/portal/20190520/eb6ee8fa731970078f54379da12ae525.png)">
-                </div>
-              </div>
-              <div class="item-right">
-                <div class="item-title">2019 Fintech Trends to Watch</div>
-                <div class="item-bottom">
-                  <span>by Kyle</span>
-                  <span>
-                    <img src="./images/date.png" width="10">
-                    <i class="time">7 hours ago </i>
-                  </span>
-                </div>
-              </div>
-            </a>
-            <!-- 小列表项 -->
-            <a href="./article.html" class="list-item">
-              <div class="item-left">
-                <div class="item-img"
-                  style="background-image: url(https://www.volanews.com/upload/portal/20190520/d01310d5be9b51a83f5a84961fd137c0.jpg)">
-                </div>
-              </div>
-              <div class="item-right">
-                <div class="item-title">Smartphone companies launched a price war in India</div>
-                <div class="item-bottom">
-                  <span>by Olivia</span>
-                  <span>
-                    <img src="./images/date.png" width="10">
-                    <i class="time">7 hours ago</i>
-                  </span>
-                </div>
-              </div>
-            </a>
-            <!-- 小列表项 -->
-            <a href="./article.html" class="list-item">
-              <div class="item-left">
-                <div class="item-img"
-                  style="background-image: url(https://www.volanews.com/upload/portal/20190520/eb6ee8fa731970078f54379da12ae525.png)">
-                </div>
-              </div>
-              <div class="item-right">
-                <div class="item-title">2019 Fintech Trends to Watch</div>
-                <div class="item-bottom">
-                  <span>by Kyle</span>
-                  <span>
-                    <img src="./images/date.png" width="10">
-                    <i class="time">7 hours ago </i>
-                  </span>
-                </div>
-              </div>
-            </a>
-            <!-- 小列表项 -->
-            <a href="./article.html" class="list-item">
-              <div class="item-left">
-                <div class="item-img"
-                  style="background-image: url(https://www.volanews.com/upload/portal/20190520/d01310d5be9b51a83f5a84961fd137c0.jpg)">
-                </div>
-              </div>
-              <div class="item-right">
-                <div class="item-title">Smartphone companies launched a price war in India</div>
-                <div class="item-bottom">
-                  <span>by Olivia</span>
-                  <span>
-                    <img src="./images/date.png" width="10">
-                    <i class="time">7 hours ago</i>
-                  </span>
-                </div>
-              </div>
-            </a>
-            <!-- 小列表项 -->
-            <a href="./article.html" class="list-item">
-              <div class="item-left">
-                <div class="item-img"
-                  style="background-image: url(https://www.volanews.com/upload/portal/20190520/eb6ee8fa731970078f54379da12ae525.png)">
-                </div>
-              </div>
-              <div class="item-right">
-                <div class="item-title">2019 Fintech Trends to Watch</div>
-                <div class="item-bottom">
-                  <span>by Kyle</span>
-                  <span>
-                    <img src="./images/date.png" width="10">
-                    <i class="time">7 hours ago </i>
-                  </span>
-                </div>
-              </div>
-            </a>
-            <!-- 小列表项 -->
-            <a href="./article.html" class="list-item">
-              <div class="item-left">
-                <div class="item-img"
-                  style="background-image: url(https://www.volanews.com/upload/portal/20190520/d01310d5be9b51a83f5a84961fd137c0.jpg)">
-                </div>
-              </div>
-              <div class="item-right">
-                <div class="item-title">Smartphone companies launched a price war in India</div>
-                <div class="item-bottom">
-                  <span>by Olivia</span>
-                  <span>
-                    <img src="./images/date.png" width="10">
-                    <i class="time">7 hours ago</i>
-                  </span>
-                </div>
-              </div>
-            </a>
-            <!-- 小列表项 -->
-            <a href="./article.html" class="list-item">
-              <div class="item-left">
-                <div class="item-img"
-                  style="background-image: url(https://www.volanews.com/upload/portal/20190520/eb6ee8fa731970078f54379da12ae525.png)">
-                </div>
-              </div>
-              <div class="item-right">
-                <div class="item-title">2019 Fintech Trends to Watch</div>
-                <div class="item-bottom">
-                  <span>by Kyle</span>
-                  <span>
-                    <img src="./images/date.png" width="10">
-                    <i class="time">7 hours ago </i>
-                  </span>
-                </div>
-              </div>
-            </a>
-            <!-- 小列表项 -->
-            <a href="./article.html" class="list-item">
-              <div class="item-left">
-                <div class="item-img"
-                  style="background-image: url(https://www.volanews.com/upload/portal/20190520/d01310d5be9b51a83f5a84961fd137c0.jpg)">
-                </div>
-              </div>
-              <div class="item-right">
-                <div class="item-title">Smartphone companies launched a price war in India</div>
-                <div class="item-bottom">
-                  <span>by Olivia</span>
-                  <span>
-                    <img src="./images/date.png" width="10">
-                    <i class="time">7 hours ago</i>
-                  </span>
-                </div>
-              </div>
-            </a>
-          </div>
-          <span class="loading">
-              <img src="./images/loading.svg" alt="">
-          </span>
-        </section>
+<div class="warper" id="indexContainer">
+  @@include('./templates/header.html')
+  <main class="index-content">
+    <div class="banner">
+      <div class="barner-left">
+        <div class="num-con">
+          <ul>
+            <li>01</li>
+            <li class="check">02</li>
+            <li>03</li>
+            <li>04</li>
+          </ul>
+        </div>
+        <div class="text-con">
+          <div class="text1">中国不动产 开发赋能专家</div>
+          <div class="text2">服务赋能，成人达己，合作共赢</div>
+          <div class="text3">SPECIALIST OF MANAGING REAL ESTATE IN CHINA</div>
+        </div>
+        <img src="@@webRoot/images/banner-line-left.svg" class="banner-line-left">
       </div>
-    </main>
-  </div>
-  <!-- build:js scripts/vendor.js -->
-  <script type="text/javascript" src="/node_modules/jquery/dist/jquery.min.js"></script>
-  <!-- endbuild -->
-  <!-- build:js scripts/main.js -->
-  <script src="scripts/main.js"></script>
-  <script src="scripts/common/header.js"></script>
-  <!-- endbuild -->
+      <div class="barner-right"></div>
+      <img src="@@webRoot/images/banner-line-bottom.svg" class="banner-line-bottom">
+    </div>
+    <div class="business-module">
+      <h1 class="title">业务模块</h1>
+      <h2 class="title-EN">THE BUSINESS SECTOR</h2>
+      <p class="title-text">聚焦三大代建领域，与合作方步步为赢</p>
+      <div class="contain">
+        <div class="con-3">
+          <div class="title-con">
+            <div>
+              <h3 class="sub-title">商业代建</h3>
+              <h4 class="sub-title-EN">COMMERCIAL CONSTRUCTION</h4>
+              <p class="text-dec">与中小型地产公司建立合作业务关系，为其提供代建、小股操盘两大类型服务，为下辖优质项目提供房地产开发全链条服务及品牌增值。</p>
+            </div>
+          </div>
+          <span class="vertical-line"></span>
+          <div class="img-con">
+            <img src="@@webRoot/images/business-bg-1.png">
+            <div class="model-con">
+              <div class="icon-con">
+                <i class="icon-house"></i>
+                <p>查看详情<i class="icon-more"></i></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="con-3">
+          <div class="title-con">
+            <div>
+              <h3 class="sub-title">资本代建</h3>
+              <h4 class="sub-title-EN">COMMERCIAL CONSTRUCTION</h4>
+            </div>
+          </div>
+          <span class="vertical-line"></span>
+          <img src="@@webRoot/images/business-bg-2.png">
+        </div>
+        <div class="con-3">
+          <div class="title-con">
+            <div>
+              <h3 class="sub-title">政府代建</h3>
+              <h4 class="sub-title-EN">COMMERCIAL CONSTRUCTION</h4>
+            </div>
+          </div>
+          <span class="vertical-line"></span>
+          <img src="@@webRoot/images/business-bg-3.png">
+        </div>
+      </div>
+    </div>
+    <div class="core-module">
+      <div class="decorate1"></div>
+      <div class="bg-img1-right"></div>
+      <div class="contain">
+        <h1 class="title">核心优势</h1>
+        <h2 class="title-EN">CORE STRENGTHS</h2>
+        <p class="title-text">释放五大核心竞争力，实现项目价值和社会价值最大化</p>
+      </div>
+      <div class="con-1 con-1-left">
+        <div class="bg-img1"></div>
+        <div class="contain">
+          <div class="describe-area">
+            <div class="text-area">
+              <div>
+                <h4 class="title">品牌溢价</h4>
+                <h4 class="title-EN">BRAND PREMIUN</h4>
+                <h4 class="title-dec">营销实力和盈利能力行业领先</h4>
+                <p class="text-dec">拒绝千篇一律的标准化，以产品力创新满足客户个性化需求；搭建星级建造标准体系，追求卓越品质，合理控制成本，打造安全、舒适、耐用、智能、创新的人居作品。</p>
+              </div>
+            </div>
+            <div class="horizontal-line"></div>
+            <div class=EN-text-area>
+              <P>REAL ESTATE</P>
+              <P>CONSTRUCTION SERVICES</P>
+              <P class="l">HIGH QUALITY PRODUCTS</P>
+            </div>
+          </div>
+        </div>
+        <div class="p-m"></div>
+      </div>
+      <div class="con-1 con-1-right">
+        <div class="bg-img1"></div>
+        <div class="contain">
+          <div class="describe-area">
+            <div class="text-area">
+              <div>
+                <h4 class="title">雄厚资本</h4>
+                <h4 class="title-EN">BRAND PREMIUN</h4>
+              </div>
+            </div>
+            <div class="horizontal-line"></div>
+            <div class=EN-text-area>
+              <P>REAL ESTATE</P>
+              <P>CONSTRUCTION SERVICES</P>
+              <P class="l">HIGH QUALITY PRODUCTS</P>
+            </div>
+          </div>
+        </div>
+        <div class="agile"></div>
+      </div>
+      <div class="con-1 con-1-left">
+        <div class="bg-img1"></div>
+        <div class="contain">
+          <div class="describe-area">
+            <div class="text-area">
+              <div>
+                <h4 class="title">专业管理</h4>
+                <h4 class="title-EN">PROFESSIONAL MANAGEMENT</h4>
+              </div>
+            </div>
+            <div class="horizontal-line"></div>
+            <div class=EN-text-area>
+              <P>REAL ESTATE</P>
+              <P>CONSTRUCTION SERVICES</P>
+              <P class="l">HIGH QUALITY PRODUCTS</P>
+            </div>
+          </div>
+        </div>
+        <div class="p-m"></div>
+      </div>
+      <div class="con-1 con-1-right">
+        <div class="bg-img1"></div>
+        <div class="contain">
+          <div class="describe-area">
+            <div class="text-area">
+              <div>
+                <h4 class="title">优质产品</h4>
+                <h4 class="title-EN">HIGH QUALITY PRODUCTS</h4>
+              </div>
+            </div>
+            <div class="horizontal-line"></div>
+            <div class=EN-text-area>
+              <P>REAL ESTATE</P>
+              <P>CONSTRUCTION SERVICES</P>
+              <P class="l">HIGH QUALITY PRODUCTS</P>
+            </div>
+          </div>
+        </div>
+        <div class="p-m"></div>
+      </div>
+      <div class="con-1 con-1-left">
+        <div class="bg-img1"></div>
+        <div class="contain">
+          <div class="describe-area">
+            <div class="text-area">
+              <div>
+                <h4 class="title">产业配套</h4>
+                <h4 class="title-EN">INDUSTRIAL SUPPORTING</h4>
+              </div>
+            </div>
+            <div class="horizontal-line"></div>
+            <div class=EN-text-area>
+              <P>REAL ESTATE</P>
+              <P>CONSTRUCTION SERVICES</P>
+              <P class="l">HIGH QUALITY PRODUCTS</P>
+            </div>
+          </div>
+        </div>
+        <div class="p-m"></div>
+      </div>
+    </div>
+  </main>
+
+  @@include('./templates/footer.html')
+  <!--  @@include('./templates/aside.html')-->
+</div>
+<!-- build:js scripts/vendor.js -->
+<script type="text/javascript" src="/node_modules/jquery/dist/jquery.min.js"></script>
+<!-- endbuild -->
+<!-- build:js scripts/main.js -->
+<script src="scripts/main.js"></script>
+<script src="scripts/common/header.js"></script>
+<!-- endbuild -->
 </body>
 
 </html>

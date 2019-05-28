@@ -1,25 +1,24 @@
 header.page-header {
-  display: flex;
-  height: 50px;
-  line-height: 50px;
+  /*display: flex;*/
+  position: fixed;
+  height: 90px;
+  line-height: 90px;
   z-index: 11;
   transition: all 300ms;
-  padding: 0 10px;
   box-shadow: 0 1px 0 0 #e8e8e8;
+  transition: all 300ms;
+  z-index: 11;
 
   .logo-area {
     position: relative;
     display: inline-block;
-    height: 45px;
-    background-color: #ff0000;
-    padding: 0 5px;
+    height: 100%;
     transition: all 300ms;
-
     img {
-      position: relative;
-      top: 50%;
-      transform: translateY(-50%);
-      height: 20px;
+      width: 160px;
+      height: 40px;
+      margin-left: 40px;
+      fill: #C81623;
     }
   }
 
@@ -28,29 +27,50 @@ header.page-header {
     display: inline-flex;
     justify-content: flex-end;
     align-items: center;
+    float: right;
+    margin-right: 160px;
+    ul li{
+      position: relative;
+      display: inline-block;
+      color: #444444;
+      margin-right: 38px;
+      cursor: pointer;
+      &:hover, &.check{
+        color: #208985;
+        &:before{
+          content: '';
+          display: block;
+          width: 98%;
+          height: 4px;
+          background-color: #208985;
+          position: absolute;
+          top: 0;
+          left: 2px;
+        }
+      }
 
-    img {
-      display: block;
-      width: 22px;
-      height: 22px;
-      padding: 0 7px;
-      box-sizing: content-box;
     }
   }
-
+  .switch-area{
+    position: absolute;
+    top:0;
+    right: 0;
+    width: 160px;
+    height: 100%;
+    text-align: center;
+    background-color: #208985;
+    a{
+      color: #ffffff;
+      border: 1px solid #ffffff;
+      box-sizing: border-box;
+      padding: 3px;
+    }
+    label{
+      color: #ffffff;
+    }
+  }
   &.static {
-    background-color: #000000;
 
-    .logo-static,
-    .search-static,
-    .menu-static {
-      display: block;
-    }
-    .logo-fixed,
-    .search-fixed,
-    .menu-fixed {
-      display: none;
-    }
   }
 
   &.fixed {

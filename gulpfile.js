@@ -93,11 +93,14 @@ function htmlBuild() {
 
 function images() {
   return src('app/images/**/*')
-    // .pipe($.imagemin())
+  // .pipe($.imagemin())
     .pipe(dest('dist/images'));
 };
 
 function imageBuild() {
+  setTimeout(() => {
+    server.reload()
+  }, 1000);
   return src('app/images/**/*')
     .pipe(dest('.tmp/images'));
 }
@@ -154,6 +157,7 @@ function startAppServer() {
     '.tmp/fonts/**/*'
   ]).on('change', server.reload);
 
+  watch('app/images/**/*', imageBuild);
   watch('app/**/*.html', htmlBuild);
   watch('app/styles/**/*.scss', styles);
   watch('app/scripts/**/*.js', scripts);
