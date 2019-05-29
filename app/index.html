@@ -3,7 +3,7 @@
 
 <head>
   @@include('./templates/meta.html')
-  <title>Volanews – Latest news about China's innovation</title>
+  <title>雅居乐首页</title>
   <!--[if lt IE 9]>
   <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
   <![endif]-->
@@ -41,11 +41,12 @@
       <img src="@@webRoot/images/banner-line-bottom.svg" class="banner-line-bottom">
     </div>
     <div id="businessModule" class="business-module">
+      <div class="businessModule-bg"></div>
       <h1 class="title">业务模块</h1>
       <h2 class="title-EN">THE BUSINESS SECTOR</h2>
       <p class="title-text">聚焦三大代建领域，与合作方步步为赢</p>
       <div class="contain">
-        <div class="con-3">
+        <div id="commercial" class="con-3">
           <div class="title-con">
             <div>
               <h3 class="sub-title">商业代建</h3>
@@ -64,15 +65,16 @@
             </div>
           </div>
         </div>
-        <div class="con-3">
+        <div  class="con-3">
           <div class="title-con">
             <div>
               <h3 class="sub-title">资本代建</h3>
               <h4 class="sub-title-EN">COMMERCIAL CONSTRUCTION</h4>
+              <p class="text-dec">与各类型金融机构建立合作关系，为不良资产提供变现及增值服务；与地产基金平台形成代建业务合作关系，向其提供专业的房地产开发业务输出及品牌输出</p>
             </div>
           </div>
           <span class="vertical-line"></span>
-          <div class="img-con">
+          <div id="capital" class="img-con">
             <img src="@@webRoot/images/business-bg-2.png">
             <div class="model-con">
               <div class="icon-con">
@@ -82,15 +84,16 @@
             </div>
           </div>
         </div>
-        <div class="con-3">
+        <div  class="con-3">
           <div class="title-con">
             <div>
               <h3 class="sub-title">政府代建</h3>
               <h4 class="sub-title-EN">COMMERCIAL CONSTRUCTION</h4>
+              <p class="text-dec">与政府平台形成代建合作或混改合作关系，为保障房、公共性建筑及房地产等项目提供开发、更新、改造等全链条服务。</p>
             </div>
           </div>
           <span class="vertical-line"></span>
-          <div class="img-con">
+          <div id="government" class="img-con">
             <img src="@@webRoot/images/business-bg-3.png">
             <div class="model-con">
               <div class="icon-con">
@@ -111,16 +114,15 @@
         <p class="title-text">释放五大核心竞争力，实现项目价值和社会价值最大化</p>
       </div>
       <div id="brandPremiun" class="con-1 con-left">
-        <div class="row-content">
           <div class="core-img brand-img"></div>
           <div class="contain">
             <div class="describe-area">
               <div class="text-area">
-                <div>
+                <div class="text-con">
                   <h4 class="title">品牌溢价</h4>
                   <h4 class="title-EN">BRAND PREMIUN</h4>
                   <h4 class="title-dec">营销实力和盈利能力行业领先</h4>
-                  <p class="text-dec">拒绝千篇一律的标准化，以产品力创新满足客户个性化需求；搭建星级建造标准体系，追求卓越品质，合理控制成本，打造安全、舒适、耐用、智能、创新的人居作品。</p>
+                  <p class="text-dec">承接雅居乐百强房企TOP10品牌价值，释放营销战力激活百万业主和十万经纪人资源，以傲人业绩扛鼎百强房企TOP6盈利实力。</p>
                 </div>
               </div>
               <div class="horizontal-line"></div>
@@ -131,18 +133,18 @@
               </div>
             </div>
           </div>
-        </div>
         <div class="p-m-right"></div>
       </div>
       <div id="withAbundantCapital" class="con-1 con-right">
-        <div class="row-content">
           <div class="core-img capital-img"></div>
           <div class="contain">
             <div class="describe-area">
               <div class="text-area">
-                <div>
-                  <h4 class="title title-36">雄厚资本</h4>
-                  <h4 class="title-EN-18">WITH ABUNDANT CAPITAL</h4>
+                <div class="text-con">
+                  <h4 class="title">雄厚资本</h4>
+                  <h4 class="title-EN">WITH ABUNDANT CAPITAL</h4>
+                  <h4 class="title-dec">资金实力和融资能力扎实过硬</h4>
+                  <p class="text-dec">依托雅居乐AAA最高信用评级和“符合国家发改委支持直接融资标准的优质企业”实力，以雄厚资本为合作方打通融资渠道。</p>
                 </div>
               </div>
               <div class="horizontal-line"></div>
@@ -153,7 +155,6 @@
               </div>
             </div>
           </div>
-        </div>
         <div class="agile"></div>
       </div>
       <div id="professionalManagement" class="con-1 con-left">
@@ -162,8 +163,10 @@
           <div class="describe-area">
             <div class="text-area">
               <div class="color-block">
-                <h4 class="title title-36">专业管理</h4>
-                <h4 class="title-EN-18">PROFESSIONAL MANAGEMENT</h4>
+                <h4 class="title">专业管理</h4>
+                <h4 class="title-EN">PROFESSIONAL MANAGEMENT</h4>
+                <h4 class="title-dec">打造定制版、人性化的全流程解决方案</h4>
+                <p class="text-dec">向合作项目派驻核心专业团队，提供贯穿设计报建、建造管理、成本管控、产品营销、品牌运营、融资支持等全流程高品质代建服务。</p>
               </div>
             </div>
             <div class="horizontal-line"></div>
@@ -178,37 +181,15 @@
         <div class="block-02-right"></div>
       </div>
       <div id="highQualityProducts" class="con-1 con-right">
-        <div class="row-content">
-        <div class="core-img product-img"></div>
-        <div class="contain">
-          <div class="describe-area">
-            <div class="text-area">
-              <div>
-                <h4 class="title title-36">优质产品</h4>
-                <h4 class="title-EN-18">HIGH QUALITY PRODUCTS</h4>
-              </div>
-            </div>
-            <div class="horizontal-line"></div>
-            <div class=EN-text-area>
-              <P>REAL ESTATE</P>
-              <P>CONSTRUCTION SERVICES</P>
-              <P class="l">HIGH QUALITY PRODUCTS</P>
-            </div>
-          </div>
-        </div>
-        </div>
-        <div class="petals-03-left"></div>
-        <div class="p-m-left"></div>
-      </div>
-      <div id="industrialSupporting" class="con-1 con-left">
-        <div class="row-content">
-          <div class="core-img industry-img"></div>
+          <div class="core-img product-img"></div>
           <div class="contain">
             <div class="describe-area">
               <div class="text-area">
                 <div>
-                  <h4 class="title title-36">产业配套</h4>
-                  <h4 class="title-EN-18">INDUSTRIAL SUPPORTING</h4>
+                  <h4 class="title">优质产品</h4>
+                  <h4 class="title-EN">HIGH QUALITY PRODUCTS</h4>
+                  <h4 class="title-dec">匠心独运打造创新之作</h4>
+                  <p class="text-dec">拒绝千篇一律的标准化，以产品力创新满足客户个性化需求；搭建星级建造标准体系，追求卓越品质，合理控制成本，打造安全、舒适、耐用、智能、创新的人居作品。</p>
                 </div>
               </div>
               <div class="horizontal-line"></div>
@@ -217,6 +198,28 @@
                 <P>CONSTRUCTION SERVICES</P>
                 <P class="l">HIGH QUALITY PRODUCTS</P>
               </div>
+            </div>
+          </div>
+        <div class="petals-03-left"></div>
+        <div class="p-m-left"></div>
+      </div>
+      <div id="industrialSupporting" class="con-1 con-left">
+        <div class="core-img industry-img"></div>
+        <div class="contain">
+          <div class="describe-area">
+            <div class="text-area">
+              <div>
+                <h4 class="title">产业配套</h4>
+                <h4 class="title-EN">INDUSTRIAL SUPPORTING</h4>
+                <h4 class="title-dec">整合人居生态链打造美好生活方式</h4>
+                <p class="text-dec">以人为本，为项目注入物管、教育、商业、交通、康养、体育等内外部多元产业配套，打造全龄层美好生活方式，护航社区资产增值。</p>
+              </div>
+            </div>
+            <div class="horizontal-line"></div>
+            <div class=EN-text-area>
+              <P>REAL ESTATE</P>
+              <P>CONSTRUCTION SERVICES</P>
+              <P class="l">HIGH QUALITY PRODUCTS</P>
             </div>
           </div>
         </div>
