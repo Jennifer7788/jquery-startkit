@@ -14,6 +14,7 @@
 
 .index-content {
   padding-top: 90px;
+  overflow-x: hidden;
 }
 
 .banner {
@@ -188,7 +189,7 @@
     width: 340px;
     position: relative;
     &:hover {
-      .img-con{
+      .img-con {
         .model-con {
           transform: translateY(0);
           opacity: 1;
@@ -199,43 +200,43 @@
       }
       .title-con {
         .text-dec{
-         display: block;
+          opacity: 1;
+          height: 69px;
         }
       }
       .vertical-line {
         background-color: #fcbe16;
       }
     }
+  }
+  .title-con {
+    height: 150px;
+    margin-top: 32px;
+    margin-bottom: 55px;
+    display: flex;
+    align-items: Center;
+    .sub-title {
+      font-size: 26px;
+      font-weight: 600;
+      color: #444444;
     }
-    .title-con {
-      height: 150px;
-      margin-top: 32px;
-      margin-bottom: 55px;
-      display: flex;
-      align-items: Center;
-      .sub-title {
-        font-size: 26px;
-        font-weight: 600;
-        color: #444444;
-      }
-      .sub-title-EN {
-        font-size: 12px;
-        font-weight: 300;
-        color: #444444;
-        margin-top: 5px;
-      }
-      .text-dec {
-        font-size: 14px;
-        line-height: 1.71;
-        letter-spacing: normal;
-        color: #444444;
-        margin-top: 15px;
-        display: none;
-        /*opacity: 0;
-        height: 0;
-        transition: all .3s ease-out;*/
-      }
+    .sub-title-EN {
+      font-size: 12px;
+      font-weight: 300;
+      color: #444444;
+      margin-top: 5px;
     }
+    .text-dec {
+      font-size: 14px;
+      line-height: 1.71;
+      letter-spacing: normal;
+      color: #444444;
+      margin-top: 15px;
+      opacity: 0;
+      height: 0;
+      transition: all .3s ease-out;
+    }
+  }
   .vertical-line {
     position: absolute;
     top: 200px;
@@ -422,17 +423,20 @@
         display: flex;
         align-items: Center;
         cursor: pointer;
+
         .title {
           font-size: 36px;
           letter-spacing: 1px;
           line-height: 50px;
           font-weight: 600;
+          transition: all .5s ease;
         }
         .title-EN {
           font-size: 18px;
           letter-spacing: 3px;
           line-height: 25px;
           font-weight: 500;
+          transition: all .5s ease;
         }
         .title-dec {
           display: none;
@@ -440,16 +444,19 @@
           font-weight: 500;
           letter-spacing: 0.9px;
           margin-top: 6px;
+          transition: all .5s ease;
         }
 
         .text-dec {
-          display: none;
           font-size: 14px;
           font-weight: 500;
           line-height: 1.71;
           letter-spacing: 0.9px;
           color: #666666;
           margin-top: 16px;
+          height: 0;
+          opacity: 0;
+          transition: all .5s ease;
         }
         &:hover{
           .title {
@@ -462,7 +469,8 @@
             margin-top: 0;
           }
           .title-dec,.text-dec{
-            display: block;
+            height: 46px;
+            opacity: 1;
           }
         }
 
@@ -494,13 +502,12 @@
     #brandPremiun, #professionalManagement, #industrialSupporting {
       .core-img {
         transition: all 1s ease-out;
-        transform: translateX(-40%);
         opacity: 0;
       }
 
       .text-area {
         transition: all .5s ease-out;
-        transform: scaleX(0) translateX(-40%);
+        transform: scaleX(0);
         transform-origin: 0;
         transition-delay: .5s;
       }
