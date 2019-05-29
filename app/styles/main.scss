@@ -90,6 +90,7 @@
         opacity: 0.35;
         vertical-align: middle;
         line-height: 50px;
+        font-size: 16px;
         &:before {
           content: '';
           display: inline-block;
@@ -101,6 +102,7 @@
           opacity: 1;
         }
         &.check{
+          opacity: 1;
           &:before {
             content: '';
             display: inline-block;
@@ -135,7 +137,8 @@
   width: 100%;
   float: left;
   background: url("../images/bg.png") no-repeat;
-  background-size: cover;
+  background-size: contain;
+  background-position: center;
 
   .title {
     font-size: 40px;
@@ -180,7 +183,8 @@
       transition: all .6s ease-out;
       transform: translateY(-40px);
       opacity: 0;
-
+      cursor: pointer;
+      overflow:hidden;
       &.active {
         transform: translateY(0);
         opacity: 1;
@@ -196,14 +200,29 @@
         width: 340px;
         height: 450px;
         background-color: rgba(32, 137, 133, 0.7);
-        display: flex;
         justify-content:center;
         align-items:Center;
+       /* display: none;*/
+        opacity: 0;
+        display: flex;
+        transition: all .6s ease-out;
+        transform: translateY(400px);
+      }
+      &:hover{
+        .model-con{
+          transform: translateY(0);
+          opacity: 1;
+        }
+        .icon-con{
+          opacity: 1;
+        }
       }
       .icon-con{
-
+        opacity: 0;
         width: 102px;
         height: 153px;
+        transition: all .5s ease-out;
+        transition-delay: 0.6s;
         p{
           text-align: center;
           color: #ffffff;
@@ -304,7 +323,7 @@
     width: 100%;
     height: 660px;
     float: left;
-    .bg-img1{
+    .core-img{
       width: 60%;
       height: 480px;
     }
@@ -332,12 +351,23 @@
         font-size: 28px;
         font-weight: 600;
         letter-spacing: 0.8px;
+        &.title-36 {
+          font-size: 36px;
+          letter-spacing: 1px;
+          line-height: 50px;
+        }
       }
       .title-EN {
         font-size: 12px;
         font-weight: 500;
         letter-spacing: 2px;
+        &.title-EN-18 {
+          font-size: 18px;
+          letter-spacing: 3px;
+          line-height: 25px;
+        }
       }
+
       .title-dec{
         font-size: 16px;
         font-weight: 500;
@@ -373,7 +403,7 @@
 
     }
   }
-  #brandPremiun {
+  #brandPremiun,#industrialSupporting {
     .row-content {
       height: 100%;
       transform: translateX(-40%);
@@ -386,7 +416,7 @@
       }
     }
   }
-  #withAbundantCapital {
+  #withAbundantCapital,#highQualityProducts {
     .row-content {
       height: 100%;
       transform: translateX(40%);
@@ -400,41 +430,34 @@
     }
   }
   #professionalManagement {
-    .bg-img1 {
+    .core-img {
       transition: all .3s ease-out;
       transform: translateX(-40%);
       opacity: 0;
-
       &.active {
         transform: translateX(0);
         opacity: 1;
       }
     }
-
     .text-area {
       transition: all .3s ease-out;
       transform: scaleX(0);
       transform-origin: 0;
-
       &.active {
         transform: scaleX(1);
       }
     }
-    
     .title {
       transition: all .3s ease-out;
       opacity: 0;
-
       &.active {
         opacity: 1;
       }
     }
-
     .horizontal-line {
       transition: all .3s ease-out;
       transform: scaleX(0);
       transform-origin: 0;
-
       &.active {
         transform: scaleX(1);
       }
@@ -444,20 +467,20 @@
       transition: all .3s ease-out;
       transform: scaleX(0);
       transform-origin: 0;
-
+      position: absolute;
+      top: 220px;
+      right: -220px;
       &.active {
-        transform: scaleX(1);
+        //transform: scaleX(1);
+        transform: scaleX(1) rotate(90deg);
       }
     }
   }
-  .con-1-left{
-    .bg-img1{
+  .con-left{
+    .core-img{
       position: absolute;
       left: 0;
       top: 0;
-      background: url("../images/img1.jpg") no-repeat;
-      background-position: top right;
-      background-size: cover;
       z-index: 0;
     }
     .text-area {
@@ -483,14 +506,11 @@
       right: -130px;
     }
   }
-  .con-1-right{
-    .bg-img1{
+  .con-right{
+    .core-img{
       position: absolute;
       right: 0;
       top: 0;
-      background: url("../images/img1.jpg") no-repeat;
-      background-position: top right;
-      background-size: cover;
       z-index: 0;
     }
     .describe-area{
@@ -516,33 +536,93 @@
       left: -130px;
     }
   }
-  .decorate1 {
+  .petals-01-left {
     position: absolute;
     top: -100px;
     left: 0;
     width: 8%;
     max-width: 210px;
     height: 300px;
-    background: url("../images/decorate1.png") no-repeat;
+    background: url("../images/petals01-left.png") no-repeat;
     background-position: top right;
     background-size: cover;
     z-index: 0;
   }
-  .bg-img1-right{
+  .block-01-right{
     position: absolute;
     top: 0px;
     right: 0;
     width: 70px;
     height: 70px;
-    background: url("../images/bg1.png") no-repeat;
+    background: url("../images/block01-right.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 0;
+  }
+  .petals-02-right {
+    position: absolute;
+    top: 71px;
+    right: 0;
+    width: 17%;
+    max-width: 341px;
+    height: 554px;
+    background: url("../images/petals02-right.png") no-repeat;
     background-position: top left;
     background-size: cover;
     z-index: 0;
   }
-  .p-m{
+  .block-02-right{
+    position: absolute;
+    top: -11px;
+    right: 0;
+    width: 6%;
+    max-width: 133px;
+    height: 69px;
+    background: url("../images/block02-right.png") no-repeat;
+    background-position: top left;
+    background-size: cover;
+    z-index: 0;
+  }
+  .block-03-right{
+    position: absolute;
+    top: -11px;
+    right: 0;
+    width: 6%;
+    max-width: 133px;
+    height: 227px;
+    background: url("../images/block03-right.png") no-repeat;
+    background-position: top right;
+    background-size: cover;
+    z-index: 0;
+  }
+  .petals-03-left{
+    position: absolute;
+    top: -500px;
+    left: 0;
+    width: 24%;
+    max-width: 462px;
+    height: 803px;
+    background: url("../images/petals03-left.png") no-repeat;
+    background-position: top right;
+    background-size: cover;
+    z-index: 0;
+  }
+  .p-m-right{
+     position: absolute;
+     top: 0px;
+     right: 0px;
+     width: 7%;
+     max-width: 144px;
+     height: 404px;
+     background: url("../images/p-m.png") no-repeat;
+     background-position: top right;
+     background-size: contain;
+     z-index: 0;
+   }
+  .p-m-left{
     position: absolute;
     top: 0px;
-    right: 0px;
+    left: 0px;
     width: 7%;
     max-width: 144px;
     height: 404px;
@@ -562,6 +642,41 @@
     background-position: top right;
     background-size: contain;
     z-index: 0;
+  }
+  .brand-img{
+    background: url("../images/advantage-01.jpg") no-repeat;
+    background-position: top right;
+    background-size: cover;
+  }
+  .capital-img{
+    background: url("../images/advantage-02.jpg") no-repeat;
+    background-position: top right;
+    background-size: cover;
+  }
+  .manage-img{
+    background: url("../images/advantage-03.jpg") no-repeat;
+    background-position: top right;
+    background-size: cover;
+  }
+  .product-img{
+    background: url("../images/advantage-04.jpg") no-repeat;
+    background-position: top right;
+    background-size: cover;
+  }
+  .industry-img{
+    background: url("../images/advantage-05.jpg") no-repeat;
+    background-position: top right;
+    background-size: cover;
+  }
+  .blue-bg{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 480px;
+    background-color: #58a5a3;
+    z-index: -1;
   }
 }
 

@@ -14,11 +14,13 @@
         // 核心优势滚动动画
         this.businessModuleAnimation('#brandPremiun');
         this.businessModuleAnimation('#withAbundantCapital');
+        this.businessModuleAnimation('#highQualityProducts');
+        this.businessModuleAnimation('#industrialSupporting');
 
         // -------------------------
         let $professionalManagement = $('#professionalManagement')[0].getBoundingClientRect();
         if ($(document.body).innerHeight() - $professionalManagement.top > $professionalManagement.height / 3) {
-          $('#professionalManagement .bg-img1').addClass('active');
+          $('#professionalManagement .core-img').addClass('active');
           setTimeout(() => {
             $('#professionalManagement .text-area').addClass('active');
             setTimeout(() => {
@@ -28,11 +30,11 @@
                 $('#professionalManagement .EN-text-area').addClass('active');
               }, 300);
             }, 300);
-          }, 200);
+          }, 300);
         } else {
           $('#professionalManagement .title').removeClass('active');
           $('#professionalManagement .text-area').removeClass('active');
-          $('#professionalManagement .bg-img1').removeClass('active');
+          $('#professionalManagement .core-img').removeClass('active');
           $('#professionalManagement .horizontal-line').removeClass('active');
           $('#professionalManagement .EN-text-area').removeClass('active');
         }
