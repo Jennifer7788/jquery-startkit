@@ -20,23 +20,9 @@
         // -------------------------
         let $professionalManagement = $('#professionalManagement')[0].getBoundingClientRect();
         if ($(document.body).innerHeight() - $professionalManagement.top > $professionalManagement.height / 3) {
-          $('#professionalManagement .core-img').addClass('active');
-          setTimeout(() => {
-            $('#professionalManagement .text-area').addClass('active');
-            setTimeout(() => {
-              $('#professionalManagement .title').addClass('active');
-              $('#professionalManagement .horizontal-line').addClass('active');
-              setTimeout(() => {
-                $('#professionalManagement .EN-text-area').addClass('active');
-              }, 300);
-            }, 300);
-          }, 300);
+          $('#professionalManagement').addClass('active');
         } else {
-          $('#professionalManagement .title').removeClass('active');
-          $('#professionalManagement .text-area').removeClass('active');
-          $('#professionalManagement .core-img').removeClass('active');
-          $('#professionalManagement .horizontal-line').removeClass('active');
-          $('#professionalManagement .EN-text-area').removeClass('active');
+          $('#professionalManagement').removeClass('active');
         }
       });
     },

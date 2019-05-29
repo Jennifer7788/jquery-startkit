@@ -434,48 +434,56 @@
       transition: all .3s ease-out;
       transform: translateX(-40%);
       opacity: 0;
-      &.active {
-        transform: translateX(0);
-        opacity: 1;
-      }
     }
     .text-area {
       transition: all .3s ease-out;
       transform: scaleX(0);
       transform-origin: 0;
-      &.active {
-        transform: scaleX(1);
-      }
+      transition-delay: .3s;
     }
     .title {
       transition: all .3s ease-out;
       opacity: 0;
-      &.active {
-        opacity: 1;
-      }
+      transition-delay: .6s;
     }
     .horizontal-line {
       transition: all .3s ease-out;
       transform: scaleX(0);
       transform-origin: 0;
-      &.active {
-        transform: scaleX(1);
-      }
+      transition-delay: .6s;
     }
 
     .EN-text-area {
       transition: all .3s ease-out;
-      transform: scaleX(0);
-      transform-origin: 0;
+      transform: scaleX(0) rotate(90deg);
+      transform-origin: 0%;
+      transition-delay: .9s;
       position: absolute;
       top: 220px;
       right: -220px;
-      &.active {
-        //transform: scaleX(1);
+    }
+
+    &.active {
+      .core-img {
+        transform: translateX(0);
+        opacity: 1;
+      }
+      .text-area {
+        transform: scaleX(1);
+      }
+      .title {
+        opacity: 1;
+      }
+      .horizontal-line {
+        transform: scaleX(1);
+      }
+      .EN-text-area {
         transform: scaleX(1) rotate(90deg);
       }
     }
   }
+
+  
   .con-left{
     .core-img{
       position: absolute;
