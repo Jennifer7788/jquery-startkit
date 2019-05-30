@@ -4,21 +4,30 @@
   .dropDown-box{
     position: relative;
     width: 200px;
-    height: 280px;
     margin-right: 20px;
     .dropDown-box-header{
-      position: absolute;
-      top: 0;
-      left: 0;
-      input{
-        width: 200px;
-        height: 44px;
-        background: #FFFFFF;
-        border: 1px solid #E8E8E8;
-        border-radius: 2px;
-        font-size: 16px;
+      display: flex;
+      align-items: center;
+      width: 200px;
+      height: 44px;
+      border: 1px solid #E8E8E8;
+
+      .icon {
+        display: inline-block;
+        width: 20px;
+        padding: 0 14px;
+      }
+
+      .text {
+        flex: 1;
         color: #666666;
-        outline: none;
+        font-size: 16px;
+      }
+
+      .arrow {
+        padding: 0 18px;
+        color: #E9001B;
+        transform: rotate(90deg);
       }
     }
     .dropDown-box-body{
@@ -27,7 +36,7 @@
       left: 0;
       display: none;
       width: 280px;
-      height: 230px;
+      min-height: 230px;
       background: #FFFFFF;
       box-sizing: border-box;
       padding: 20px 10px;
@@ -46,15 +55,39 @@
           border-bottom: 1px solid #e8e8e8;
           font-size: 14px;
           color: #B4B4B5;
+          outline: none;
         }
       }
-      ul{
+      .dropDown-box-main{
         padding: 0;
-        li{
+        .dropDown-item{
+          position: relative;
           list-style: none;
           font-size: 14px;
           color: #000000;
           margin-top: 20px;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          
+          &:hover {
+            color: #EA001B;
+          }
+
+          .icon-check {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 1px solid #E8E8E8;
+            border-radius: 1px;
+            margin-right: 12px;
+
+            &.checked {
+              background-image: url("../images/checkbox-checked.png");
+              background-position: center;
+              background-size: cover;
+            }
+          }
         }
 
       }
@@ -71,12 +104,17 @@
     color: #FFFFFF;
     background: #EA001B;
     margin-right: 10px;
+    cursor: pointer;
+    label{
+      cursor: pointer;
+    }
     .icon-close{
       display: inline-block;
       width: 8px;
       height: 8px;
       background: url("../images/tips_close.svg") no-repeat;
       background-size: cover;
+      cursor: pointer;
     }
   }
 }
