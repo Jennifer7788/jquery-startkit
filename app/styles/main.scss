@@ -62,3 +62,22 @@
   }
 
 }
+.tag-area{
+  display: flex;
+  justify-content:flex-start;
+  flex-wrap: wrap;
+  .tag-con{
+    padding: 10px;
+    color: #FFFFFF;
+    background: #EA001B;
+    margin-right: 10px;
+    .icon-close{
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      background: url("../images/tips_close.svg") no-repeat;
+      background-size: cover;
+    }
+  }
+}
+

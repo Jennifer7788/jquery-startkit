@@ -9,8 +9,8 @@
       });
       $(".dropDown-item").on("click",(e) => {
         console.log($(e.target).text());
-        let text="<div><label>"+$(e.target).text()+"</label> <i>X</i></div>"
-        $(".tag-con").append(text);
+        let text="<div class='tag-con'><label>"+$(e.target).text()+"</label> <i class='icon-close'></i></div>"
+        $(".tag-area").append(text);
       });
     },
   }
