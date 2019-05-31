@@ -22,17 +22,31 @@
       //下拉框选项点击事件
       $('.dropDown-item').on('click',(e) => {
         let value = $(e.target).text();
-
-        if ($(e.target).find('.icon-check').hasClass('checked')) {
-          this.removeItem(value);
-        } else {
-          this.selectItem(value);
+        if(value===''){
+          value = $(e.target).parent('.dropDown-item').text();
+          if ($(e.target).parent('.dropDown-item').hasClass('checked')) {
+            this.removeItem(value);
+          } else {
+            this.selectItem(value);
+          }
+        }else{
+          if ($(e.target).hasClass('checked')) {
+            this.removeItem(value);
+          } else {
+            this.selectItem(value);
+          }
         }
+
       });
 
       //已选列表点击某一项移除该项
       $('.tag-area').on('click', '.tag-con', e => {
-        this.removeItem(e.target.textContent);
+        if (e.target.textContent=='') {
+          this.removeItem($(e.target).parent('.tag-con').text().trim());
+        }else{
+          this.removeItem(e.target.textContent);
+        }
+
       });
 
       //下拉框可模糊搜索
@@ -68,7 +82,7 @@
       //移除已选的项到已选列表
       $('.dropDown-item').each((index, item) => {
         if (item.textContent === value) {
-          $(item).find('.icon-check').removeClass('checked');
+          $(item).removeClass('checked');
         }
       });
     },
@@ -78,7 +92,7 @@
       //下拉列表中选中内容是value的
       $('.dropDown-item').each((index, item) => {
         if (item.textContent === value) {
-          $(item).find('.icon-check').addClass('checked');
+          $(item).addClass('checked');
         }
       });
 
