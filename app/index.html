@@ -10,7 +10,8 @@
 
   <!-- build:css styles/vendor.css -->
   <link rel="stylesheet" href="/node_modules/normalize.css/normalize.css">
-  <link rel="stylesheet" href="/node_modules/jquery-datetimepicker/jquery.datetimepicker.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <link rel="stylesheet" type="text/css" href="https://npmcdn.com/flatpickr/dist/themes/material_red.css">
   <!-- endbuild -->
   <!-- build:css styles/main.css -->
   <link rel="stylesheet" href="styles/main.css">
@@ -82,7 +83,7 @@
       </div>
     </div>
       <div class="dropDown-box">
-        <input id="datetimepicker" type="text" >
+        <input id="datetimepicker" class="selector" type="text" >
       </div>
     </div>
     <div class="tag-area">
@@ -90,7 +91,7 @@
 </div>
 <!-- build:js scripts/vendor.js -->
 <script type="text/javascript" src="/node_modules/jquery/dist/jquery.min.js"></script>
-<script type="text/javascript" src="/node_modules/jquery-datetimepicker/jquery.datetimepicker.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 <!-- endbuild -->
 <!-- build:js scripts/main.js -->
 <script src="scripts/main.js"></script>

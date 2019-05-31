@@ -4,7 +4,10 @@
       this.initEvents()
     },
     initEvents() {
-      $('#datetimepicker').datetimepicker();
+      $(".selector").flatpickr({
+        dateFormat: "Y-m-d",
+        mode: "range"
+      });
       //弹出下拉框
       $('.dropDown-box-header').on('click',(e) => {
         $(e.target).parent('.dropDown-box-header').siblings('.dropDown-box-body').toggleClass('show');
