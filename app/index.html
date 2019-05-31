@@ -10,6 +10,7 @@
 
   <!-- build:css styles/vendor.css -->
   <link rel="stylesheet" href="/node_modules/normalize.css/normalize.css">
+  <link rel="stylesheet" href="/node_modules/jquery-datetimepicker/jquery.datetimepicker.css">
   <!-- endbuild -->
   <!-- build:css styles/main.css -->
   <link rel="stylesheet" href="styles/main.css">
@@ -62,23 +63,26 @@
         </div>
       </div>
       <div class="dropDown-box">
-        <div class="dropDown-box-header">
-          <img class="icon" src="@@webRoot/images/group.svg" />
-          <span class="text">Open Date</span>
-          <span class="arrow">></span>
+      <div class="dropDown-box-header">
+        <img class="icon" src="@@webRoot/images/group.svg" />
+        <span class="text">Open Date</span>
+        <span class="arrow">></span>
+      </div>
+      <div class="dropDown-box-body">
+        <div class="dropDown-box-search">
+          <i class="icon-search"></i>
+          <input type="text" placeholder="Search">
         </div>
-        <div class="dropDown-box-body">
-          <div class="dropDown-box-search">
-            <i class="icon-search"></i>
-            <input type="text" placeholder="Search">
-          </div>
-          <ul class="dropDown-box-main">
-            <li class="dropDown-item"><i class="icon-check"></i>中国人民共和国</li>
-            <li class="dropDown-item"><i class="icon-check"></i>中非</li>
-            <li class="dropDown-item"><i class="icon-check"></i>非洲</li>
-            <li class="dropDown-item"><i class="icon-check"></i>澳洲</li>
-          </ul>
-        </div>
+        <ul class="dropDown-box-main">
+          <li class="dropDown-item"><i class="icon-check"></i>中国人民共和国</li>
+          <li class="dropDown-item"><i class="icon-check"></i>中非</li>
+          <li class="dropDown-item"><i class="icon-check"></i>非洲</li>
+          <li class="dropDown-item"><i class="icon-check"></i>澳洲</li>
+        </ul>
+      </div>
+    </div>
+      <div class="dropDown-box">
+        <input id="datetimepicker" type="text" >
       </div>
     </div>
     <div class="tag-area">
@@ -86,6 +90,7 @@
 </div>
 <!-- build:js scripts/vendor.js -->
 <script type="text/javascript" src="/node_modules/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="/node_modules/jquery-datetimepicker/jquery.datetimepicker.js"></script>
 <!-- endbuild -->
 <!-- build:js scripts/main.js -->
 <script src="scripts/main.js"></script>

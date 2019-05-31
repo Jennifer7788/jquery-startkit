@@ -4,6 +4,7 @@
       this.initEvents()
     },
     initEvents() {
+      $('#datetimepicker').datetimepicker();
       //弹出下拉框
       $('.dropDown-box-header').on('click',(e) => {
         $(e.target).parent('.dropDown-box-header').siblings('.dropDown-box-body').toggleClass('show');
@@ -51,9 +52,9 @@
 
       //下拉框可模糊搜索
       var search_input = $('.dropDown-box-search input');
-      $(search_input).bind("input propertychange",(e)=>{
+      $(search_input).bind('input propertychange',(e)=>{
         var input_value =$(e.target).val();
-        var dropDown_item =$(e.target).parent('.dropDown-box-search').siblings('.dropDown-box-main').find("li");
+        var dropDown_item =$(e.target).parent('.dropDown-box-search').siblings('.dropDown-box-main').find('li');
 
         $(dropDown_item).each((index, item) => {
           if (input_value===''){
