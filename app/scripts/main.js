@@ -34,6 +34,26 @@
       $('.tag-area').on('click', '.tag-con', e => {
         this.removeItem(e.target.textContent);
       });
+
+      //下拉框可模糊搜索
+      var search_input = $('.dropDown-box-search input');
+      $(search_input).bind("input propertychange",(e)=>{
+        var input_value =$(e.target).val();
+        var dropDown_item =$(e.target).parent('.dropDown-box-search').siblings('.dropDown-box-main').find("li");
+
+        $(dropDown_item).each((index, item) => {
+          if (input_value===''){
+            $(item).show();
+          }else{
+            if (item.textContent.toLowerCase().indexOf(input_value.toLowerCase())>=0) {
+              $(item).show();
+            } else{
+              $(item).hide();
+            }
+          }
+
+        });
+      });
     },
 
     //移除选中下拉项
@@ -72,6 +92,9 @@
 
       $('.tag-area').append(text);
     }
+
+
+
   };
   dropDowmPage.init()
 })(jQuery);
