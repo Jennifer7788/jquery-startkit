@@ -4,9 +4,12 @@
       this.initEvents()
     },
     initEvents() {
-      $(".selector").flatpickr({
-        dateFormat: "Y-m-d",
-        mode: "range"
+      $('#datetimepicker').flatpickr({
+        dateFormat: 'Y-m-d',
+        mode: 'range',
+        onClose: (selectedDates, dateStr, instance)=>{
+          this.selectItemData(dateStr);
+        },
       });
       //弹出下拉框
       $('.dropDown-box-header').on('click',(e) => {
@@ -109,9 +112,26 @@
       `;
 
       $('.tag-area').append(text);
+    },
+
+
+    //添加选中时间项
+    selectItemData(value) {
+      //添加已选的时间到已选列表
+      if($('.tag-area').find('.data-tag-con').length===0){
+        let text=`
+        <div class='tag-con data-tag-con'>
+          <label>${value}</label>
+          <i class='icon-close'></i>
+        </div>
+      `;
+
+        $('.tag-area').append(text);
+      }else{
+        $('.data-tag-con label').text(value);
+      }
+
     }
-
-
 
   };
   dropDowmPage.init()
